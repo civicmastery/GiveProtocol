@@ -1,18 +1,81 @@
-# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
-# a Gemfile as specified at https://github.com/github/pages-gem#conventional
+# Node.js and npm
+node_modules
+package-lock.json
 
-# Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# Solidity build artifacts
+build/
+artifacts/
+cache/
+browser_build/ # For frontend builds that bundle contracts
+typechain/     # If using TypeChain for type-safe contract interactions
 
-# Additional Ruby/bundler ignore for when you run: bundle install
-/vendor
+# Hardhat specific
+hardhat-export/
+hardhat.config.js.backup*
+.openzeppelin/
 
-# Specific ignore for GitHub Pages
-# GitHub Pages will always use its own deployed version of pages-gem 
-# This means GitHub Pages will NOT use your Gemfile.lock and therefore it is
-# counterproductive to check this file into the repository.
-# Details at https://github.com/github/pages-gem/issues/768
-Gemfile.lock
+# Truffle specific
+truffle-config.js.backup*
+migrations/
+contracts/*.json # ABI and bytecode files
+
+# Foundry specific
+out/
+cache_forge/
+.cache-forge/
+lib/
+
+# Environment variables and secrets
+.env
+.env.*.local
+.secret*
+private_key*
+mnemonic*
+
+# Frontend specific 
+.next/           # Next.js
+out/             # Next.js build output
+.nuxt/           # Nuxt.js
+dist/            # Vue.js, general build output
+build/           # React (CRA) build output
+yarn-error.log
+pnpm-lock.yaml
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Coverage reports
+coverage/
+lcov.info
+
+# OS generated files
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+
+# Other common exclusions
+*.sqlite
+*.db
+*.keystore
+
+# Potential Moonbeam/Polkadot specific 
+.moonbeam_cache/
+moonbeam-build/
+target/
+wasm/
+*.chainspec.raw
+*.chainspec
+.polkadotjs_cache/
+polkadot-js-build/
