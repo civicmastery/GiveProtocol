@@ -1,4 +1,4 @@
-markdown# GiveProtocol
+# GiveProtocol
 
 A decentralized platform for transparent and efficient charitable giving powered by blockchain technology.
 
