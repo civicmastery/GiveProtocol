@@ -1,6 +1,7 @@
 # GiveProtocol
 
 A decentralized platform for transparent and efficient charitable giving powered by blockchain technology.
+We are welcoming and friendly community please follow our [Code of Conduct](Code_of_Conduct.md).
 
 ## Overview
 
